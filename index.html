@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG Prado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #282A36;
+            color: white;
+            text-align: center;
+            font-family: Ubuntu;
+        }
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        #video-background video {
+            min-width: 100%;
+            min-height: 100%;
+        }
+        .social-media {
+            list-style-type: none;
+            text-align: center;
+        }
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: Ubuntu Mono;
+        }
+    </style>
+</head>
+<body>
+    <div id="video-background">
+        <video autoplay loop muted>
+            <source src="public/fundo.mp4" type="video/mp4">
+        </video>
+    </div>
+    <a href="index.html"><h1>Allan Guilherme Prado</h1></a>
+    <ul class="social-media">
+        <li><a href="https://www.instagram.com/allanguilhermeprado/" target="_blank">Instagram @allanguilhermeprado</a></li><br>
+        <li><a href="https://github.com/allangprado" target="_blank">Github @allangprado</a></li><br>
+        <li><a href="https://youtube.com/@allangprado" target="_blank">YouTube @allangprado</a></li><br>
+        <li><a href="https://twitter.com/allangprado" target="_blank">Twitter @allangprado</a></li><br>
+        <li><a href="https://tiktok.com/@allangprado" target="_blank">TikTok @allangprado</a></li><br>
+    </ul>
+</body>
+</html>
