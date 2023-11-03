@@ -2,21 +2,24 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AG Prado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Allan Guilherme Prado</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            text-align: center;
-            color: #FFFFFF;
+        * {
+            box-sizing: border-box;
         }
         header {
-            position: absolute;
-            bottom: 55%;
-            width: 100%;
+            text-align: center;
             font-family: Ubuntu;
+            color: #FFFFFF;
+            padding: 0;
+            margin: 0;
+            position: fixed;
+            bottom: 50%;
+            width: 100%;
         }
         #video-background {
             position: fixed;
@@ -31,16 +34,27 @@
             min-height: 100%;
         }
         .social-media {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
             list-style-type: none;
             text-align: center;
+            color: #FFFFFF;
+            padding: 0;
+            margin: 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
         a {
             color: #FFFFFF;
             text-decoration: none;
             font-family: Ubuntu Mono;
+        }
+        .blinking {
+            animation: blink 0.8s infinite;
+        }
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
         }
     </style>
 </head>
@@ -51,14 +65,15 @@
         </video>
     </div>
     <header>
-        <h1>Allan Guilherme Prado</h1>
+        <h2>Allan Guilherme Prado</h2>
+        <a name="point1" class="blinking">│︎</a>
     </header>
     <ul class="social-media">
-        <li><a href="https://www.instagram.com/allanguilhermeprado/" target="_blank">Instagram @allanguilhermeprado</a></li><br>
         <li><a href="https://github.com/allangprado" target="_blank">Github @allangprado</a></li><br>
         <li><a href="https://youtube.com/@allangprado" target="_blank">YouTube @allangprado</a></li><br>
         <li><a href="https://twitter.com/allangprado" target="_blank">Twitter @allangprado</a></li><br>
         <li><a href="https://tiktok.com/@allangprado" target="_blank">TikTok @allangprado</a></li><br>
+        <li><a href="https://www.instagram.com/allanguilhermeprado/" target="_blank">Instagram @allanguilhermeprado</a></li><br>
     </ul>
 </body>
 </html>
